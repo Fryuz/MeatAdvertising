@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Несуществующая категория</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            color: #333333;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #000000; /* Цвет шутки будет генерироваться случайно */
+        }
+        
+        p {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        
+        .joke {
+            font-style: italic;
+            color: #000000; /* Цвет шутки будет генерироваться случайно */
+            font-size: 20px;
+        }
+        
+        .image-container {
+            margin-top: 40px;
+        }
+        
+        .image-container img {
+            width: 300px;
+            border-radius: 50%;
+        }
+    </style>
+    <script>
+        // Функция для генерации случайного числа в заданном диапазоне
+        function getRandomNumber(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+        
+        // Функция для генерации случайного цвета в формате HEX
+        function getRandomColor() {
+            var letters = "0123456789ABCDEF";
+            var color = "#";
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+        
+        // Функция для генерации случайной шутки
+        function generateRandomJoke() {
+            var jokes = [
+                "Знаете, почему говядина всегда вызывает улыбку? Потому что она секу-местно вкусная!",
+                "Какая говядина самая социальная? Стейк-пати!",
+                "Что говорит говядина, когда получает комплимент? Спасибо, я просто шедевр!",
+                "Почему говядина не играет в футбол? Она боится, что ее могут забрать на перевалку!",
+                "Как называется говядина, которая смотрит много сериалов? Бифштексы!"
+            ];
+            var randomIndex = getRandomNumber(0, jokes.length - 1);
+            return jokes[randomIndex];
+        }
+        
+        // Функция для генерации случайной шутки и цвета при загрузке страницы
+        function generateRandomContent() {
+            var jokeElement = document.querySelector(".joke");
+            var colorElements = document.querySelectorAll(".container, h1, .joke");
+            
+            var randomColor = getRandomColor();
+            colorElements.forEach(function(element) {
+                element.style.color = randomColor;
+            });
+            
+            var randomJoke = generateRandomJoke();
+            jokeElement.textContent = randomJoke;
+        }
+        
+        // Генерация случайной шутки и цвета при загрузке страницы
+        window.addEventListener("load", generateRandomContent);
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Эта категория никуда не ведет</h1>
+        <p>Кажется, вы потерялись на просторах интернета.</p>
+        <p class="joke">Здесь будет случайная шутка про говядину!</p>
+    </div>
+</body>
+</html>

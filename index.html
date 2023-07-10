@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" title="stylesheet" charset="utf-8">
+	<meta name="robots" content="all">
+	<title>Магазин мяса</title>
+	<meta charset="utf-8">
+	<meta content="Russian" name="language">
+	<meta name="description"
+		content="Вам не надо больше тратить время на поиски свежих натуральных мясных продуктов. Для этого есть мы - студенты КИТИФа. Многие НЕ имеют био сертификаты. А им и не надо">
+	<script async src="js/tag.js"></script>
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,900,900i&amp;subset=cyrillic&amp;display=fallback">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/uikit.min.css">
+	<link href="css/text.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="_ready _load">
+	<header class="uk-visible@m">
+		<div class="uk-container">
+			<div class="uk-flex uk-flex-wrap uk-flex-middle uk-flex-between uk-grid">
+				<div>
+					<a href="/" class="logo uk-flex">
+						<div>
+							<div class="signboard-d__logo logo-d"><img src="images/logo1.png"
+									class="useradmin_contener"></div>
+						</div>
+						<div>
+							<span class="logo_name">Свежее мясо</span>
+							<span class="logo_slogan">И только в нашем Колледже</span>
+						</div>
+					</a>
+				</div>
+				<div class="uk-text-right">
+					<span class="header_phone__title">Заказ по телефону:</span>
+					<a href="tel:+78005553535" class="header_phone">+7 (800) 555-35-35</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<form method="POST" enctype="multipart/form-data" action class="ajax js_bs_form bs_form _hidden">
+		<input type="hidden" name="module" value="bs">
+		<input type="hidden" name="action" value="click">
+		<input type="hidden" name="banner_id" value="0">
+	</form>
+	<div class="slider_wrapper">
+		<div class="uk-container">
+			<div class="slider uk-position-relative uk-visible-toggle uk-light"
+				uk-slideshow="animation: fade; autoplay: true; autoplay-interval: 3000;max-height:460">
+				<ul class="uk-slideshow-items">
+					<li>
+						<div
+							class="uk-flex uk-flex-wrap uk-flex-middle uk-height-1-1 uk-child-width-1-1 uk-child-width-1-2@m">
+							<div uk-slideshow-parallax="fade: 1.2,1.2,1">
+								<img data-src="images/banner_3_3.png" alt="Маринад для шашлыка и колбаски" uk-img>
+							</div>
+							<div>
+								<div class="slider_text uk-text-right">
+									<div uk-slideshow-parallax="fade: 1,1,0.8">
+										<h2 uk-slideshow-parallax="x: 400,0,0;">Уже готовы к шашлыкам?</h2>
+										<div uk-slideshow-parallax="x: 600,0,0;">Закажите свежее
+											мяса и колбаски для жарки!</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div
+							class="uk-flex uk-flex-wrap uk-flex-middle uk-height-1-1 uk-child-width-1-1 uk-child-width-1-2@m">
+							<div uk-slideshow-parallax="fade: 1.2,1.2,1">
+								<img data-src="images/slide-01_1.png" alt="Только натуральный продукт" uk-img>
+							</div>
+							<div>
+								<div class="slider_text uk-text-right">
+									<div uk-slideshow-parallax="fade: 1,1,0.8">
+										<h2 uk-slideshow-parallax="x: 400,0,0;">Только натуральный продукт</h2>
+										<div uk-slideshow-parallax="x: 600,0,0;">Свежее мясо, ежедневные поставки</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<main>
+		<div class="uk-container">
+			<h1 class="main_page-h1">Ассортимент в Воронеже</h1>
+		</div>
+		<div class="catalog_list">
+			<div class="uk-container">
+				<div
+					class="catalog_list_items uk-flex uk-flex-wrap uk-child-width-1-2 uk-child-width-1-4@m uk-grid-small">
+					<div>
+						<div class="catalog_item js_shop">
+							<div class="catalog_item__images"><a class="_fit js_shop_img" image_id="64">
+									<img data-src="images/lopatka-na-kosti.jpg" alt="Лопатка на кости"
+										title="Лопатка на кости" uk-img></a>
+								<div class="catalog_item__labels"></div>
+							</div>
+							<div class="catalog_item__details">
+								<div class="catalog_item__info">
+									<div class="catalog_item__name">
+										<a>Лопатка на кости</a>
+									</div>
+									<div class="catalog_item__params"></div>
+								</div>
+								<div class="uk-flex uk-flex-wrap uk-flex-between uk-flex-middle">
+									<div class="catalog_item__offer-pricelist">
+										<div class="catalog_item__offer-price js_shop_param_price">
+											<strong>
+												<span class="catalog_item__offer-num js_shop_price" summ="295"
+													format_price_1="2" format_price_2="," format_price_3>295</span>
+												<span class="catalog_item__offer-curr">₽</span>
+											</strong><span class="catalog_item__offer-unit"> / кг</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="catalog_item js_shop">
+							<div class="catalog_item__images"><a class="_fit js_shop_img" image_id="21">
+									<img data-src="images/yazyk-govyazhiy.jpg" alt="Язык говяжий" title="Язык говяжий"
+										uk-img></a>
+								<div class="catalog_item__labels"></div>
+							</div>
+							<div class="catalog_item__details">
+								<div class="catalog_item__info">
+									<div class="catalog_item__name">
+										<a>Язык говяжий</a>
+									</div>
+									<div class="catalog_item__params"></div>
+								</div>
+								<div class="uk-flex uk-flex-wrap uk-flex-between uk-flex-middle">
+									<div class="catalog_item__offer-pricelist">
+										<div class="catalog_item__offer-price js_shop_param_price">
+											<strong>
+												<span class="catalog_item__offer-num js_shop_price" summ="750"
+													format_price_1="2" format_price_2="," format_price_3>750</span>
+												<span class="catalog_item__offer-curr">₽</span>
+											</strong><span class="catalog_item__offer-unit"> / кг</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="catalog_item js_shop">
+							<div class="catalog_item__images"><a class="_fit js_shop_img" image_id="43">
+									<img data-src="images/govyazhya-myakot.jpg" alt="Говяжья мякоть"
+										title="Говяжья мякоть" uk-img></a>
+								<div class="catalog_item__labels"></div>
+							</div>
+							<div class="catalog_item__details">
+								<div class="catalog_item__info">
+									<div class="catalog_item__name">
+										<a>Говяжья мякоть</a>
+									</div>
+									<div class="catalog_item__params"></div>
+								</div>
+								<div class="uk-flex uk-flex-wrap uk-flex-between uk-flex-middle">
+									<div class="catalog_item__offer-pricelist">
+										<div class="catalog_item__offer-price js_shop_param_price">
+											<strong>
+												<span class="catalog_item__offer-num js_shop_price" summ="640"
+													format_price_1="2" format_price_2="," format_price_3>640</span>
+												<span class="catalog_item__offer-curr">₽</span>
+											</strong><span class="catalog_item__offer-unit"> / кг</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="catalog_item js_shop">
+							<div class="catalog_item__images"><a class="_fit js_shop_img" image_id="43">
+									<img data-src="images/govyazhe-file.jpg" alt="Филе" title="Филе" uk-img></a>
+								<div class="catalog_item__labels"></div>
+							</div>
+							<div class="catalog_item__details">
+								<div class="catalog_item__info">
+									<div class="catalog_item__name">
+										<a>Филе</a>
+									</div>
+									<div class="catalog_item__params"></div>
+								</div>
+								<div class="uk-flex uk-flex-wrap uk-flex-between uk-flex-middle">
+									<div class="catalog_item__offer-pricelist">
+										<div class="catalog_item__offer-price js_shop_param_price">
+											<strong>
+												<span class="catalog_item__offer-num js_shop_price" summ="1290"
+													format_price_1="2" format_price_2="," format_price_3>1290</span>
+												<span class="catalog_item__offer-curr">₽</span>
+											</strong><span class="catalog_item__offer-unit"> / кг</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="catalog_item js_shop">
+							<div class="catalog_item__images"><a class="_fit js_shop_img" image_id="84">
+									<img data-src="images/sheya-govyazhya.jpg" alt="Говяжья шея" title="Говяжья шея"
+										uk-img></a>
+								<div class="catalog_item__labels"></div>
+							</div>
+							<div class="catalog_item__details">
+								<div class="catalog_item__info">
+									<div class="catalog_item__name">
+										<a>Говяжья шея</a>
+									</div>
+									<div class="catalog_item__params"></div>
+								</div>
+								<div class="uk-flex uk-flex-wrap uk-flex-between uk-flex-middle">
+									<div class="catalog_item__offer-pricelist">
+										<div class="catalog_item__offer-price js_shop_param_price">
+											<strong>
+												<span class="catalog_item__offer-num js_shop_price" summ="630"
+													format_price_1="2" format_price_2="," format_price_3>630</span>
+												<span class="catalog_item__offer-curr">₽</span>
+											</strong><span class="catalog_item__offer-unit"> / кг</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="catalog_item js_shop">
+							<div class="catalog_item__images"><a class="_fit js_shop_img" image_id="84">
+									<img data-src="images/gulyash-govyazhiy.jpg" alt="Гуляшь говяжий"
+										title="Гуляшь говяжий" uk-img></a>
+								<div class="catalog_item__labels"></div>
+							</div>
+							<div class="catalog_item__details">
+								<div class="catalog_item__info">
+									<div class="catalog_item__name">
+										<a>Гуляшь говяжий</a>
+									</div>
+									<div class="catalog_item__params"></div>
+								</div>
+								<div class="uk-flex uk-flex-wrap uk-flex-between uk-flex-middle">
+									<div class="catalog_item__offer-pricelist">
+										<div class="catalog_item__offer-price js_shop_param_price">
+											<strong>
+												<span class="catalog_item__offer-num js_shop_price" summ="590"
+													format_price_1="2" format_price_2="," format_price_3>590</span>
+												<span class="catalog_item__offer-curr">₽</span>
+											</strong><span class="catalog_item__offer-unit"> / кг</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="catalog_item js_shop">
+							<div class="catalog_item__images"><a class="_fit js_shop_img" image_id="80">
+									<img data-src="images/bulonka.jpg" alt="Бульонка" title="Бульонка" uk-img></a>
+								<div class="catalog_item__labels"></div>
+							</div>
+							<div class="catalog_item__details">
+								<div class="catalog_item__info">
+									<div class="catalog_item__name">
+										<a>Бульонка</a>
+									</div>
+									<div class="catalog_item__params"></div>
+								</div>
+								<div class="uk-flex uk-flex-wrap uk-flex-between uk-flex-middle">
+									<div class="catalog_item__offer-pricelist">
+										<div class="catalog_item__offer-price js_shop_param_price">
+											<strong>
+												<span class="catalog_item__offer-num js_shop_price" summ="315"
+													format_price_1="2" format_price_2="," format_price_3>315</span>
+												<span class="catalog_item__offer-curr">₽</span>
+											</strong><span class="catalog_item__offer-unit"> / кг</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="catalog_item js_shop">
+							<div class="catalog_item__images"><a class="_fit js_shop_img" image_id="84">
+									<img data-src="images/koreyka-svinina.jpg" alt="Корейка" title="Корейка" uk-img></a>
+								<div class="catalog_item__labels"></div>
+							</div>
+							<div class="catalog_item__details">
+								<div class="catalog_item__info">
+									<div class="catalog_item__name">
+										<a>Корейка</a>
+									</div>
+									<div class="catalog_item__params"></div>
+								</div>
+								<div class="uk-flex uk-flex-wrap uk-flex-between uk-flex-middle">
+									<div class="catalog_item__offer-pricelist">
+										<div class="catalog_item__offer-price js_shop_param_price">
+											<strong>
+												<span class="catalog_item__offer-num js_shop_price" summ="380"
+													format_price_1="2" format_price_2="," format_price_3>380</span>
+												<span class="catalog_item__offer-curr">₽</span>
+											</strong><span class="catalog_item__offer-unit"> / кг</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="icon_line" uk-parallax="bgx: 80">
+		</div>
+		<div class="category_list">
+			<div class="uk-container">
+				<h2>Ассортимент</h2>
+				<div class="category_list_items uk-flex uk-flex-wrap uk-child-width-1-1 uk-child-width-1-2@s uk-grid">
+					<div>
+						<div class="category_list_item"><a href="joke.html"><img src="images/govyadina.jpg"
+									alt="Говядина" title="Говядина">
+								<div class="category_list_item-title">Говядина</div>
+							</a></div>
+					</div>
+					<div>
+						<div class="category_list_item"><a href="joke.html"><img src="images/svinina.jpg" alt="Свинина"
+									title="Свинина">
+								<div class="category_list_item-title">Свинина</div>
+							</a></div>
+					</div>
+					<div>
+						<div class="category_list_item"><a href="joke.html"><img src="images/baranina.jpg"
+									alt="Баранина" title="Баранина">
+								<div class="category_list_item-title">Баранина</div>
+							</a></div>
+					</div>
+					<div>
+						<div class="category_list_item"><a href="joke.html"><img src="images/myaso-ptitsy-krolik.jpg"
+									alt="Мясо птицы. Кролик" title="Мясо птицы. Кролик">
+								<div class="category_list_item-title">Мясо птицы. Кролик</div>
+							</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="about_wrapper">
+			<div class="uk-container">
+				<div class="about uk-flex uk-flex-wrap uk-flex-middle">
+					<div class="uk-width-1-1 uk-width-2-5@m uk-flex-last@m">
+						<div class="about_img">
+							<img src="images/fuymhAXskBY.jpg" alt="Доставка мяса по Воронежу" uk-img>
+						</div>
+					</div>
+					<div class="uk-width-1-1 uk-width-3-5@m">
+						<div class="about_text">
+							<section class="_text">
+								<h3>Немного о нас</h3>
+								<p>
+									Мы специализируемся на поставке и продаже высококачественных мясных изделий. Наша
+									компания предлагает свежие и вкусные продукты, включая стейки, колбасы и другие
+									мясные блюда. Мы работаем с надежными поставщиками и гарантируем качество каждого
+									изделия. Наша команда профессионалов всегда готова оказать отличное обслуживание и
+									предоставить рекомендации по приготовлению мясных блюд. Мы стремимся сделать процесс
+									выбора и покупки удобным и приятным для наших клиентов.</p>
+								<p><strong>Наш адрес:</strong></p>
+								<ul>
+									<li>ул. 20-летия Октября, д. 119А</li>
+								</ul>
+							</section>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</main>
+	<footer>
+		<div class="uk-container">
+			<div class="footer_mobile_contacts uk-hidden@m">
+				<a class="footer_phone" href="tel:+7800553535"><span uk-icon="icon: phone"></span>
+					+7 (800) 555-35-35</a>
+				<a class="footer_email" href="mailto:nastya.chernatina@mail.ru">nastya.chernatina@mail.ru</a>
+			</div>
+			<div class="uk-flex uk-flex-wrap uk-flex-middle uk-flex-between">
+				<div class="uk-width-1-1 uk-width-1-2@m">
+					© 2023. ИП Чернятина Анастасия Олеговна <br>
+					ИНН 366523003998 ОГРНИП 322366800007720 <br>
+					Свежее мясо оптом и в розницу | Самовывоз мяса в Воронеже <br> <br>
+					Представленные изображения были взяты из свободных интернет источников.
+					Сайт не имеет никакой коммерческой цели.
+				</div>
+				<div class="uk-width-1-1 uk-width-1-2@m uk-text-right">
+					<div class="uk-visible@m">
+						<a class="footer_phone" href="tel:+78005553535"><span uk-icon="icon: phone"></span>
+							+7 (800) 555-35-35</a>
+						<a class="footer_email" href="mailto:nastya.chernatina@mail.ru">nastya.chernatina@mail.ru</a>
+					</div>
+					<div class="footer__devs">
+						<img src="images/3x.webp" width="125" height="40">
+						<svg xmlns="https://www.w3.org/2000/svg" width="125" height="40" fill="#334f95"
+							viewBox="0 0 936 316">
+							<text style="font-family: &#x27;Open Sans&#x27;, sans-serif;
+								font-size: 110px; fill: #21292c;" x="90" y="130">Сделано челами</text>
+							<text style="font-family: &#x27;Open Sans&#x27;, sans-serif;
+								font-size: 110px; letter-spacing: 3px; fill: #21292c;" x="400" y="270" textLength="550">КИТИФ</text>
+						</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript" src="js/jquery.touchSwipe.min.js" charset="UTF-8"></script>
+	<script src="js/uikit.min.js"></script>
+</body>
+
+</html>
